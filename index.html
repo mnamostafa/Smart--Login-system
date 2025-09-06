@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Login System</title>
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+  <!-- Re-registration Screen -->
+  <div class="container" id="registerContainer">
+    <h2>Sign Up</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a onclick="showLogin()">Login</a></p>
+    <p id="registerMessage" class="error"></p>
+  </div>
+
+<!-- Re-login Screen -->
+  <div class="container" id="loginContainer">
+    <h2>Smart Login System</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Enter your email" required>
+      <input type="password" id="loginPassword" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a onclick="showRegister()">Sign Up</a></p>
+    <p id="loginMessage" class="error"></p>
+  </div>
+
+  <!-- Home Screen -->
+  <div class="container" id="homeContainer">
+    <h2 id="welcomeMsg">Welcome</h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
